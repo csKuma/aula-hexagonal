@@ -1,10 +1,11 @@
 package com.chris.hexagonal.application.core.usecase;
 
 import com.chris.hexagonal.application.core.domain.Customer;
+import com.chris.hexagonal.application.ports.in.InsertCustomerInputPort;
 import com.chris.hexagonal.application.ports.out.FindAddressByZipCodeOutPutPort;
 import com.chris.hexagonal.application.ports.out.InsertCustomerOutPutPort;
 
-public class InsertCustomerUsercase {
+public class InsertCustomerUsercase implements InsertCustomerInputPort {
 
     private final FindAddressByZipCodeOutPutPort findAddressByZipCodeOutPutPort;
     private final InsertCustomerOutPutPort insertCustomerOutPutPort;
@@ -15,6 +16,7 @@ public class InsertCustomerUsercase {
         this.insertCustomerOutPutPort = insertCustomerOutPutPort;
     }
 
+    @Override
     public void insert(Customer customer, String zipCode) {
         var address = findAddressByZipCodeOutPutPort.find(zipCode);
         customer.setAddress(address);

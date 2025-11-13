@@ -6,6 +6,9 @@ spring:
       uri: mongodb://141.148.146.134:27017/hexagonal
 
 
+  kafka:
+    bootstrap-servers: 189.49.215.124:9092
+
 chris:
   client:
     address:

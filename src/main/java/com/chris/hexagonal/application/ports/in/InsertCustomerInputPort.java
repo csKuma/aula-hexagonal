@@ -1,0 +1,7 @@
+package com.chris.hexagonal.application.ports.in;
+
+import com.chris.hexagonal.application.core.domain.Customer;
+
+public interface InsertCustomerInputPort {
+    void insert(Customer customer, String zipCode);
+}
