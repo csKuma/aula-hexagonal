@@ -3,13 +3,19 @@ spring:
     name: hexagonal
   data:
     mongodb:
-      uri: mongodb://141.148.146.134:27017/hexagonal
+      host: 141.148.146.134
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: example
+      database: hexagonal
 
 
   kafka:
-    bootstrap-servers: 189.49.215.124:9092
+    bootstrap-servers: 141.148.146.134:29092
+
 
 chris:
   client:
     address:
-      url: http://141.148.146.134:8082/address
+      url: http://141.148.146.134:8081/addresses

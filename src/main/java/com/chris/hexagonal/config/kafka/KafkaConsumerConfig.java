@@ -1,8 +1,9 @@
 package com.chris.hexagonal.config.kafka;
 
 import com.chris.hexagonal.adapters.in.consumer.message.CustomerMessage;
-import lombok.Value;
+
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
@@ -21,7 +22,8 @@ import static org.apache.kafka.clients.consumer.ConsumerConfig.VALUE_DESERIALIZE
 
 @Configuration
 public class KafkaConsumerConfig {
-    @Value("${kafka.bootstrap-servers}")
+
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
     @Bean
     public ConsumerFactory<String, CustomerMessage> consumerFactory() {
