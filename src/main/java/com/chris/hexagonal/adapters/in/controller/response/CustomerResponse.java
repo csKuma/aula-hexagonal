@@ -1,6 +1,5 @@
 package com.chris.hexagonal.adapters.in.controller.response;
 
-import com.chris.hexagonal.application.core.domain.Address;
 import lombok.Data;
 
 @Data

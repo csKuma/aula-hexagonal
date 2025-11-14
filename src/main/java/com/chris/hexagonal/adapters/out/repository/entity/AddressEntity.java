@@ -1,7 +1,6 @@
 package com.chris.hexagonal.adapters.out.repository.entity;
 
 import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 public class AddressEntity {

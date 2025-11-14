@@ -5,7 +5,6 @@ import com.chris.hexagonal.adapters.in.controller.response.CustomerResponse;
 import com.chris.hexagonal.application.core.domain.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 
 
 @Mapper(componentModel = "Spring")

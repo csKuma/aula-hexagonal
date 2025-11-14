@@ -1,6 +1,5 @@
 package com.chris.hexagonal.adapters.out;
 
-import com.chris.hexagonal.adapters.in.controller.mapper.CustomerMapper;
 import com.chris.hexagonal.adapters.out.repository.CustomerRepository;
 import com.chris.hexagonal.adapters.out.repository.mapper.CustomerEntityMapper;
 import com.chris.hexagonal.application.core.domain.Customer;

@@ -5,7 +5,6 @@ import com.chris.hexagonal.adapters.in.consumer.message.CustomerMessage;
 import com.chris.hexagonal.application.core.domain.Customer;
 import com.chris.hexagonal.application.ports.in.UpdateCustomerInputPort;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.annotation.KafkaHandler;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
